@@ -1,0 +1,23 @@
+# Tickers in scope. Adding a name is a config edit only.
+# tier: core (always on), linked (sidebar, default on), peer (sidebar, default off).
+names:
+  - ticker: NVDA
+    display_name: NVIDIA
+    tier: core
+    color: "#76B900"
+  - ticker: ORCL
+    display_name: Oracle
+    tier: linked
+    color: "#C74634"
+  - ticker: CRWV
+    display_name: CoreWeave
+    tier: linked
+    color: "#5B6CFF"
+  - ticker: META
+    display_name: Meta
+    tier: peer
+    color: "#0668E1"
+  - ticker: GOOGL
+    display_name: Alphabet
+    tier: peer
+    color: "#34A853"

@@ -1,0 +1,14 @@
+# Look up real CUSIPs and ISINs on FINRA's Fixed Income Data site.
+# Replace the NVDA placeholder before any bond panel can show trades.
+# Pick 2–3 bonds per issuer across short, mid, and long maturities.
+# Long-dated bonds show spread moves most clearly.
+NVDA:
+  - cusip: "XXXXXXXXX"
+    isin: "USXXXXXXXXXX"
+    coupon: 0.0
+    maturity: "YYYY-MM-DD"
+    label: "NVDA 20XX"
+ORCL: []
+CRWV: []
+META: []
+GOOGL: []
