@@ -1,0 +1,36 @@
+# Sourced copy for panels that are not built yet.
+# Panel 6 reads cards. Panel 1 and Panel 4 read captions when those panels are added.
+# A card with an empty source or url does not render.
+# A bank_derisking.csv row with an empty source or url does not render.
+# A blank date renders as "date unverified".
+# Do not add figures that are not in this file. Live auction metrics come from the Treasury source.
+
+cards:
+  - title: Bank de-risking tracker
+    kind: table
+    data: data/bank_derisking.csv
+    columns: [date, bank, action, size_usd, status]
+    blank_date_label: date unverified
+    caption: "Lenders are selling, insuring, or slicing AI loans. Some insurers report being at or near their data center exposure limits (Willis Towers Watson survey via Claims Journal)."
+    source: Willis Towers Watson survey via Claims Journal
+    url: https://www.claimsjournal.com/news/national/2026/10/30/340977.htm
+  - title: Collateral risk
+    kind: text
+    body: "Lenders worry GPU-backed loans will outlive the useful life of the chips securing them. Ares says it is passing on GPU financing because it can't underwrite the depreciation curves (Semafor via AI Weekly)."
+    source: Semafor via AI Weekly
+    url: https://aiweekly.co/alerts/ing-shops-500m-data-center-loan-book-stargate-slice-included
+  - title: Regulators
+    kind: text
+    body: "The ECB is weighing a review of bank data center lending; loans to euro-area AI companies are just under EUR 200B (broader than data centers alone). The Bank of England has questioned lenders about data centers financed before tenants committed."
+    source: roic.ai
+    url: https://www.roic.ai/news/ecb-weighs-review-of-banks-ai-data-center-lending-as-supervisory-scrutiny-grows-11-06-2026
+
+captions:
+  - panel: cds_tape
+    text: "Not all CDS widening is default fear. Banks holding AI loans buy protection to hedge, and that demand pushes spreads wider on its own."
+  - panel: auctions
+    text: "Demand is still showing up. The price of that demand is what's rising."
+    metric: most_recent_30_year
+    fields: [high_yield, bid_to_cover, indirect_pct, high_yield_change_vs_prior_30_year]
+    reopenings: count as 30-year auctions and flag them
+    values: pull from the Treasury source; do not hardcode
