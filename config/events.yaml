@@ -1,61 +1,32 @@
-# Dated chart annotations.
-# Each event: date, label, detail, tickers, source, url, upcoming.
-# tickers is a list, or "all" for every chart.
-# watch is the header phrase for an upcoming event. The label stays short for charts.
-# An event with an empty source or url does not render.
-#
-# Panel 5 (when built): past events are vertical dashed lines with the short label,
-# filtered by ticker. If two events on the same chart fall within 3 days, stagger
-# the label heights, or show the label on hover only.
-# Upcoming events stay off the charts. The header shows a Watch chip until the date passes.
+# Short labels drawn on the stock chart. Each one needs a source URL.
 events:
-  - date: "2026-08-28"
-    label: "Burry flags NVDA guarantee"
-    detail: "Burry cites NVIDIA 10-Q guarantee for an OpenAI data center as circular financing"
+  - date: "2026-07-01"
+    label: "CDS about 40 bp"
     tickers: [NVDA]
-    source: Benzinga
-    url: https://www.webull.ca/news-detail/15479339806639104
-    upcoming: false
-  - date: "2026-10-30"
-    label: "Banks seek loan insurance"
-    detail: "Barclays, Deutsche, HSBC risk transfers on AI and data center loans"
-    tickers: [NVDA, ORCL, CRWV]
-    source: Insurance Journal
-    url: https://www.insurancejournal.com/news/international/2026/10/30/890898.htm
-    upcoming: false
-  - date: "2026-11-05"
-    label: "Nasdaq 100 -6.4%"
-    detail: "Post-midterm selloff, about 2.3T wiped; CoreWeave junk bonds among the biggest decliners"
-    tickers: [NVDA, ORCL, CRWV, META, GOOGL]
-    source: Bloomberg via The Edge
-    url: https://theedgemalaysia.com/node/824796
-    upcoming: false
-  - date: "2026-11-05"
-    label: "BoE questions DC lending"
-    detail: "Bank of England questions lenders on speculative data center projects"
-    tickers: all
-    source: roic.ai
-    url: https://www.roic.ai/news/ecb-weighs-review-of-banks-ai-data-center-lending-as-supervisory-scrutiny-grows-11-06-2026
-    upcoming: false
+    source: "TNW / Bloomberg"
+    url: "https://thenextweb.com/news/nvidia-credit-risk-eases-huang-500bn-plan"
+  - date: "2026-07-27"
+    label: "CDS 82 bp, called a record"
+    tickers: [NVDA]
+    source: "ICE Data Services via Bloomberg"
+    url: "https://www.kucoin.com/blog/ae-nvidia-cds-record-high-ai-bubble-crypto"
+  - date: "2026-07-27"
+    label: "CDS 215 bp"
+    tickers: [ORCL]
+    source: "ICE Data Services"
+    url: "https://www.itiger.com/news/1103602666"
   - date: "2026-11-06"
-    label: "ING puts AI loans up for sale"
-    detail: "About 500M data center loan BWIC including a Stargate slice"
-    tickers: [ORCL, CRWV]
-    source: Bloomberg via The Edge
-    url: https://theedgemalaysia.com/node/824796
-    upcoming: false
+    label: "CDS about 139 bp"
+    tickers: [NVDA]
+    source: "CNBC"
+    url: "https://fourweekmba.com/ai-nvidia-cds-up-76-to-139bp-priced-like-a-double-b-credit/"
   - date: "2026-11-06"
-    label: "ECB weighs review"
-    detail: "ECB weighing review of bank data center lending"
-    tickers: all
-    source: roic.ai
-    url: https://www.roic.ai/news/ecb-weighs-review-of-banks-ai-data-center-lending-as-supervisory-scrutiny-grows-11-06-2026
-    upcoming: false
-  - date: "2026-11-19"
-    label: "ING bids due"
-    detail: "Clearing price on the ING loan sale may reset marks on comparable data center debt"
-    tickers: [ORCL, CRWV]
-    source: Finimize
-    url: https://finimize.com/content/ing-puts-500-million-data-center-loan-portfolio-up-for-sale
-    upcoming: true
-    watch: "ING loan sale bids due"
+    label: "CDS about 298 bp"
+    tickers: [ORCL]
+    source: "CNBC"
+    url: "https://fourweekmba.com/ai-coreweave-cds-is-8x-nvidias-139bp-as-credit-prices-ai-risk/"
+  - date: "2026-11-06"
+    label: "CDS about 1,155 bp"
+    tickers: [CRWV]
+    source: "Deutsche Bank via CNBC"
+    url: "https://fourweekmba.com/ai-coreweave-cds-is-8x-nvidias-139bp-as-credit-prices-ai-risk/"

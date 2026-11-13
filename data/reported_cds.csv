@@ -1,0 +1,7 @@
+date,name,level_bp,tenor,source,url,note
+2026-07-01,NVDA,40,5Y,TNW / Bloomberg,https://thenextweb.com/news/nvidia-credit-risk-eases-huang-500bn-plan,Approximate. Described as early July.
+2026-07-27,NVDA,82,5Y,ICE Data Services via Bloomberg,https://www.kucoin.com/blog/ae-nvidia-cds-record-high-ai-bubble-crypto,"Record, and it was an intraday print."
+2026-07-27,ORCL,215,5Y,ICE Data Services,https://www.itiger.com/news/1103602666,Reported level.
+2026-11-06,NVDA,139,unspecified,CNBC,https://fourweekmba.com/ai-nvidia-cds-up-76-to-139bp-priced-like-a-double-b-credit/,Approximate. Tenor was not specified.
+2026-11-06,ORCL,298,unspecified,CNBC,https://fourweekmba.com/ai-coreweave-cds-is-8x-nvidias-139bp-as-credit-prices-ai-risk/,Approximate. Tenor was not specified.
+2026-11-06,CRWV,1155,5Y,Deutsche Bank via CNBC,https://fourweekmba.com/ai-coreweave-cds-is-8x-nvidias-139bp-as-credit-prices-ai-risk/,Approximate.

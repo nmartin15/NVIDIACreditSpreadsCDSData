@@ -1,0 +1,29 @@
+# ICE BofA option-adjusted spreads and Treasury yields, both from FRED.
+# Spreads are published in percent. The app converts them to basis points.
+spreads:
+  - id: BAMLC0A0CM
+    label: Investment grade
+    color: "#1F4E79"
+  - id: BAMLC0A4CBBB
+    label: BBB
+    color: "#C47B2B"
+  - id: BAMLH0A0HYM2
+    label: High yield
+    color: "#9B2226"
+treasuries:
+  - id: DGS1
+    years: 1
+  - id: DGS2
+    years: 2
+  - id: DGS3
+    years: 3
+  - id: DGS5
+    years: 5
+  - id: DGS7
+    years: 7
+  - id: DGS10
+    years: 10
+  - id: DGS20
+    years: 20
+  - id: DGS30
+    years: 30

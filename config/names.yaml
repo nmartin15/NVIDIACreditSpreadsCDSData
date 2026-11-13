@@ -1,23 +1,51 @@
 # Tickers in scope. Adding a name is a config edit only.
 # tier: core (always on), linked (sidebar, default on), peer (sidebar, default off).
+# tape_names and underlier_ids were seen on the DTCC SEC credit file dated 2026-11-12.
+# Confirm them before relying on a match. Do not add XSSNRREFOBL0; it showed up on more than one company.
 names:
   - ticker: NVDA
     display_name: NVIDIA
     tier: core
-    color: "#76B900"
+    color: "#1B4332"
+    tape_names:
+      - NVIDIA
+    underlier_ids:
+      - US67066GAN43
+      - 6D76CM
   - ticker: ORCL
     display_name: Oracle
     tier: linked
-    color: "#C74634"
+    color: "#9B2226"
+    tape_names:
+      - ORACLE
+    underlier_ids:
+      - US68389XBN49
+      - 6EC42L
+      - 6EC42LAE4
+      - 6EC42LSN1
   - ticker: CRWV
     display_name: CoreWeave
     tier: linked
-    color: "#5B6CFF"
+    color: "#5C4D7A"
+    tape_names:
+      - COREWEAVE
+    underlier_ids:
+      - US21873SAC26
+      - 239FAVSN1
   - ticker: META
     display_name: Meta
     tier: peer
-    color: "#0668E1"
+    color: "#1F4E79"
+    tape_names:
+      - META PLATFORMS
+    underlier_ids:
+      - US30303M8L96
+      - UZEAAG
   - ticker: GOOGL
     display_name: Alphabet
     tier: peer
-    color: "#34A853"
+    color: "#3D6B4F"
+    tape_names:
+      - ALPHABET
+    underlier_ids:
+      - US02079KAK34

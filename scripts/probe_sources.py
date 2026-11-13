@@ -273,8 +273,7 @@ def probe_finra() -> None:
     else:
         token_response = request(
             "POST",
-            "https://ews.fpg.finra.org/fip/rest/ews/oauth2/access_token",
-            params={"grant_type": "client_credentials"},
+            "https://ews.fip.finra.org/fip/rest/ews/oauth2/access_token",
             auth=(client_id, client_secret),
             data={"grant_type": "client_credentials"},
         )

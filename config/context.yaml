@@ -1,36 +1,17 @@
-# Sourced copy for panels that are not built yet.
-# Panel 6 reads cards. Panel 1 and Panel 4 read captions when those panels are added.
-# A card with an empty source or url does not render.
-# A bank_derisking.csv row with an empty source or url does not render.
-# A blank date renders as "date unverified".
-# Do not add figures that are not in this file. Live auction metrics come from the Treasury source.
-
+# Plain-language cards. Every figure keeps its source and date.
 cards:
-  - title: Bank de-risking tracker
-    kind: table
-    data: data/bank_derisking.csv
-    columns: [date, bank, action, size_usd, status]
-    blank_date_label: date unverified
-    caption: "Lenders are selling, insuring, or slicing AI loans. Some insurers report being at or near their data center exposure limits (Willis Towers Watson survey via Claims Journal)."
-    source: Willis Towers Watson survey via Claims Journal
-    url: https://www.claimsjournal.com/news/national/2026/10/30/340977.htm
-  - title: Collateral risk
-    kind: text
-    body: "Lenders worry GPU-backed loans will outlive the useful life of the chips securing them. Ares says it is passing on GPU financing because it can't underwrite the depreciation curves (Semafor via AI Weekly)."
-    source: Semafor via AI Weekly
-    url: https://aiweekly.co/alerts/ing-shops-500m-data-center-loan-book-stargate-slice-included
-  - title: Regulators
-    kind: text
-    body: "The ECB is weighing a review of bank data center lending; loans to euro-area AI companies are just under EUR 200B (broader than data centers alone). The Bank of England has questioned lenders about data centers financed before tenants committed."
-    source: roic.ai
-    url: https://www.roic.ai/news/ecb-weighs-review-of-banks-ai-data-center-lending-as-supervisory-scrutiny-grows-11-06-2026
-
-captions:
-  - panel: cds_tape
-    text: "Not all CDS widening is default fear. Banks holding AI loans buy protection to hedge, and that demand pushes spreads wider on its own."
-  - panel: auctions
-    text: "Demand is still showing up. The price of that demand is what's rising."
-    metric: most_recent_30_year
-    fields: [high_yield, bid_to_cover, indirect_pct, high_yield_change_vs_prior_30_year]
-    reopenings: count as 30-year auctions and flag them
-    values: pull from the Treasury source; do not hardcode
+  - date: "2026-07-26"
+    title: "NVIDIA's own filing caps customer guarantees at $108.5 billion"
+    text: "In the quarterly report for the period ended July 26, 2026, NVIDIA lists $3.5 billion of guarantees on some AI-cloud leases and $105 billion of guarantees for an OpenAI-related campus in Ohio. The total maximum exposure in that table is $108.5 billion. A guarantee means NVIDIA pays if the customer does not. FourWeekMBA wrote up the same table."
+    source: "NVIDIA Form 10-Q, quarter ended July 26, 2026"
+    url: "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+  - date: "2026-07-27"
+    title: "NVIDIA was reported to be discussing a $250 billion OpenAI backstop"
+    text: "Bloomberg reported that NVIDIA was in talks to guarantee as much as $250 billion so OpenAI could finance a data-center lease. The talks were not a finished deal. On August 14, 2026, the Wall Street Journal reported the amount under discussion had been cut to less than $120 billion."
+    source: "Bloomberg, July 27, 2026"
+    url: "https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says"
+  - date: "2026-11-05"
+    title: "AI bonds were paying almost twice the extra yield of other investment-grade bonds"
+    text: "BofA figures, reported by MarketWatch, put investment-grade AI bonds about 148 basis points over Treasuries on November 5, 2026. The rest of the investment-grade market was about 77. A basis point is one hundredth of a percentage point, so this is 1.48% versus 0.77% of extra yield."
+    source: "BofA data via MarketWatch, November 6, 2026"
+    url: "https://www.marketwatch.com/story/data-centers-run-on-debt-that-was-a-problem-for-bonds-this-year-and-its-only-going-to-get-worse-09c03be6"
